@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="description" content="Create professional resumes and cover letters quickly and easily with ResumeCraft. Free templates, expert tips, and ATS-friendly designs." />
+    <meta name="keywords" content="resume builder, cv maker, job application, professional resume, cover letter" />
+    <meta name="author" content="ResumeCraft" />
+    
+    <!-- Security -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'" />
+    
+    <!-- PWA assets -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preloading & resource hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="%PUBLIC_URL%/logo192.png" as="image">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="ResumeCraft - Professional Resume Builder" />
+    <meta property="og:description" content="Create professional resumes and cover letters with ResumeCraft" />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+    <meta property="og:url" content="https://yourresumeapp.com" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ResumeCraft - Professional Resume Builder" />
+    
+    <title>ResumeCraft - Professional Resume Builder</title>
+  </head>
+  <body class="font-sans antialiased bg-gray-50">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
+    
+    <noscript>
+      <div class="p-4 bg-yellow-100 text-yellow-800">
+        You need to enable JavaScript to run this app.
+      </div>
+    </noscript>
+    
+    <div id="root"></div>
+    <div id="main-content"></div>
+    
+    <!-- App loading indicator -->
+    <div id="loader" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+      <p>Loading ResumeCraft...</p>
+    </div>
+    
+    <!-- Add a fallback script to hide loader -->
+    <script>
+      window.onload = function() {
+        document.getElementById('loader').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
